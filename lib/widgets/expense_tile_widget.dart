@@ -36,12 +36,12 @@ class ExpenseTileWidget extends StatelessWidget {
       },
       child: ListTile(
         onTap: () => context.showAddExpenseSheet(expense: expense),
-        leading: Icon(Icons.car_repair, color: colorScheme.surfaceTint),
+        leading: Icon(Icons.shopping_bag, color: colorScheme.surfaceTint),
         title: Text(expense.title, style: textTheme.titleMedium),
         subtitle: Text(
           formattedDate,
           style: textTheme.bodySmall?.copyWith(
-            color: colorScheme.onBackground.withOpacity(0.5),
+            color: colorScheme.onSurface.withOpacity(0.5),
           ),
         ),
         trailing: Text('-$price', style: textTheme.titleLarge),

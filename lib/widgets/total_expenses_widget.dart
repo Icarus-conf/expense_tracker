@@ -24,7 +24,7 @@ class TotalExpensesWidget extends StatelessWidget {
           Text(
             'Total Expenses',
             style: textTheme.bodyMedium?.copyWith(
-              color: colorScheme.onBackground.withOpacity(0.4),
+              color: colorScheme.onSurface.withOpacity(0.4),
             ),
           ),
           Text(totalExpenses, style: textTheme.displaySmall),
